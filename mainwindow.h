@@ -22,7 +22,6 @@ public:
 
 private slots:
     void on_btnToggleState_clicked();
-
     void on_btnUpdateConfig_clicked();
 
 private:

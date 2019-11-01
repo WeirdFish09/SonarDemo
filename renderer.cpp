@@ -50,7 +50,7 @@ void Renderer::DrawData(QPainter *painter, const QLineF& line)
 {
     QPointF scaledPointOnCircle(line.p2().x()*scale,line.p2().y()*scale);
     QLineF scaledRadius(line.p1(),scaledPointOnCircle);
-    painter->setPen(Qt::red);
+    painter->setBrush(Qt::red);
     auto data = ds->GetData(line);
     for(auto i=data->keyBegin();i!=data->keyEnd();i++){
         if(QLineF(QPointF(i->x()*scale,i->y()*scale),line.p1()).length()<line.length()){
